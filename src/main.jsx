@@ -12,15 +12,19 @@ import {
 import Index1 from './Pages/Home/Multipage/Home1/Index1';
 import About from './Pages/About/About';
 import Hizmetlerimiz from './Pages/Services/Hizmetlerimiz/Hizmetlerimiz';
-
-
 import ProjectDetailsÇeliktepe from './Pages/Services/ProjectDetailsÇeliktepe';
 import ProjectDetailsBakirköy from './Pages/Services/ProjectDetailsBakirköy';
 import ProjectDetailsSapanca from './Pages/Services/ProjectDetailsSapanca';
 import ProjectsList from './Pages/Services/ProjectsList';
-import './i18n'; // i18n yapılandırmasını projenize dahil edin.
+import './i18n';
 import ProjectDetailsNewProject from './Pages/Services/ProjectDetailsNewProject';
 
+// Vite preloadError event listener
+window.addEventListener('vite:preloadError', (event) => {
+    console.error('Preload error detected:', event.payload);
+    event.preventDefault();
+    window.location.reload();
+});
 
 const router = createBrowserRouter([
   { path: "/*", element: <Index1 /> },
@@ -37,5 +41,5 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
       <RouterProvider router={router} />
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);
