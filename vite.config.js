@@ -8,8 +8,9 @@ export default defineConfig({
     outDir: 'dist',
     chunkSizeWarningLimit: 1000,
   },
+  base: './', // BASE YOLUNU BELİRTİN
   server: {
     host: 'localhost',
-    port: '3000'
+    port: 3000,
   }
 });
