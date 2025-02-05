@@ -1,16 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  build: {
-    outDir: 'dist',
-    chunkSizeWarningLimit: 1000,
-  },
-  base: './', // BASE YOLUNU BELİRTİN
-  server: {
-    host: 'localhost',
-    port: 3000,
-  }
+  base: '/', // Kök dizin kullanımı için ayarlayın
 });
