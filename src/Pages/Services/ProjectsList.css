@@ -1,0 +1,119 @@
+.projects-list-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.section {
+    margin-bottom: 40px;
+    text-align: center; /* Başlıkları ortalar */
+}
+
+.section h2 {
+    font-size: 24px;
+    color: #0056b3;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Maksimum 3 sütun */
+    gap: 20px;
+    justify-items: center; /* Kartları yatayda ortalar */
+    align-items: start;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 300px; /* Kartın maksimum genişliği */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Hover efekti */
+}
+
+.project-thumbnail {
+    width: 100%;
+    height: 200px; /* Sabit bir yükseklik */
+    object-fit: cover; /* Görselin tamamını kart içinde gösterir */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.project-name {
+    font-size: 20px;
+    color: #0056b3;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center; /* Başlıkları ortalar */
+}
+
+.project-location {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.view-details-button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #0056b3;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.view-details-button:hover {
+    background-color: #003f82; /* Hover rengi */
+}
+
+@media (max-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr); /* Orta ekranlar için 2 sütun */
+    }
+
+    .project-thumbnail {
+        height: 180px; /* Orta ekranlarda görsel yüksekliği */
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(1, 1fr); /* Mobilde 1 sütun */
+    }
+
+    .project-card {
+        padding: 15px;
+    }
+
+    .project-thumbnail {
+        height: 150px; /* Mobilde görsel yüksekliği */
+    }
+
+    .project-name {
+        font-size: 18px;
+    }
+
+    .project-location {
+        font-size: 14px;
+    }
+
+    .view-details-button {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}

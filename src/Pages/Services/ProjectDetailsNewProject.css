@@ -1,0 +1,95 @@
+.new-project-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    background: linear-gradient(135deg, #0056b3, #003f82);
+    border-radius: 15px;
+    margin: 40px auto;
+    max-width: 1000px;
+    text-align: center;
+    overflow: hidden;
+    color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Overlay Efekti */
+.new-project-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.2; /* Daha hafif transparan */
+    z-index: 1;
+}
+
+/* İçerik */
+.new-project-content {
+    position: relative;
+    z-index: 2;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.new-project-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 15px;
+}
+
+.new-project-description {
+    font-size: 18px;
+    color: #e6e6e6;
+    margin-top: 10px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    line-height: 1.6;
+}
+
+/* Kum Saati Animasyonu */
+.hourglass-icon {
+    font-size: 50px;
+    color: #000000; /* Renk siyah olarak değiştirildi */
+    animation: rotateHourglass 1.5s infinite linear;
+    margin-bottom: 15px;
+}
+
+/* Animasyonlar */
+@keyframes rotateHourglass {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(180deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+    .new-project-section {
+        height: auto;
+        padding: 30px 15px;
+    }
+
+    .new-project-title {
+        font-size: 28px;
+    }
+
+    .new-project-description {
+        font-size: 16px;
+    }
+
+    .hourglass-icon {
+        font-size: 40px;
+        color: #000000; /* Renk siyah olarak değiştirildi */
+        
+    }
+}

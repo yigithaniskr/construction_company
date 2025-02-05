@@ -1,0 +1,336 @@
+/* Genel Stil */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.homepage {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #f8f8f8;
+}
+
+/* Slider */
+.slider {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+    background-color: #000;
+}
+
+.slide {
+    flex: 0 0 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+    position: relative;
+}
+
+.slide-content {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.slide-content h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.slide-content p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.slide-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.slide-button:hover {
+    background-color: #003f82;
+}
+
+/* Slider Navigation Buttons */
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.prev-button {
+    left: 20px;
+}
+
+.next-button {
+    right: 20px;
+}
+
+.prev-button:hover,
+.next-button:hover {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+/* Teklif Al Bölümü */
+.cta-section {
+    background: linear-gradient(135deg, #003f82, #0056b3);
+    padding: 35px 20px;
+    color: #fff;
+    border-radius: 15px;
+    margin: 40px auto;
+    max-width: 900px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cta-section .cta-text {
+    flex: 1;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cta-section h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.cta-button:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+/* Mobil için sağdan ve soldan boşluk */
+@media (max-width: 768px) {
+    .cta-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 20px 15px;
+        padding: 30px 15px;
+    }
+
+    .cta-section h2 {
+        font-size: 20px;
+        white-space: normal;
+    }
+
+    .cta-section p {
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .cta-button {
+        font-size: 14px;
+        padding: 10px 20px;
+        margin-top: 10px;
+    }
+}
+
+/* Masaüstü için büyük yazı */
+@media (min-width: 769px) {
+    .cta-section h2 {
+        font-size: 32px; /* Daha büyük yazı boyutu */
+    }
+
+    .cta-section p {
+        font-size: 24px; /* Daha büyük yazı boyutu */
+    }
+}
+
+/* Şirket Tanıtım Bölümü */
+.company-intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin: 50px auto;
+    max-width: 1000px;
+}
+
+.image-container {
+    flex: 1;
+    max-width: 400px;
+}
+
+.image-border {
+    position: relative;
+    display: inline-block;
+    padding: 15px;
+}
+
+.image-border::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border-top: 8px solid #0047ab;
+    border-left: 8px solid #0047ab;
+}
+
+.company-image {
+    width: 100%;
+    display: block;
+}
+
+.company-text {
+    flex: 2;
+}
+
+.company-text h2 {
+    color: #0047ab;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.company-text p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.read-more-button {
+    display: inline-block;
+    background-color: #000;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
+}
+
+.read-more-button:hover {
+    background-color: #333;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .company-intro {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .image-container {
+        max-width: 80%;
+    }
+
+    .company-image {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .company-text {
+        width: 90%;
+        text-align: center;
+    }
+
+    .company-text h2 {
+        font-size: 22px;
+    }
+
+    .company-text p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .read-more-button {
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+    }
+}
+
+/* Neden Bizi Seçmelisiniz? */
+.why-choose-us {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+}
+
+.advantages {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.advantage {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+    padding: 20px;
+}
+
+.advantage h3 {
+    color: #0047ab;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .why-choose-us {
+        padding: 30px 15px;
+    }
+
+    .advantages {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .advantage {
+        max-width: 100%;
+        padding: 15px;
+    }
+}

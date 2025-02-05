@@ -1,0 +1,196 @@
+{
+    "footer": {
+      "company_description": "İpekçi İnşaat, müşteri memnuniyetini ön planda tutarak kat karşılığı inşaat, anahtar teslim projeler, dekorasyon ve tadilat hizmetleri sunmaktadır. Emlak danışmanlığı ve kaliteli çözümleriyle sektörde fark yaratıyoruz.",
+      "contact_info": "İLETİŞİM BİLGİLERİ",
+      "address": "Kağıthane / İstanbul",
+      "phone": "(+90) 532 558 96 58",
+      "email": "info@ipekciinsaat.com",
+      "services": "HİZMETLERİMİZ",
+      "service_list": {
+        "construction": "Kat Karşılığı İnşaat Taahhüt",
+        "turnkey": "Anahtar Teslimi İnşaat",
+        "decoration": "Ev, Ofis, Daire Dekorasyon & Tadilat",
+        "real_estate": "Emlak Danışmanlığı"
+      },
+      "projects": "Projelerimiz",
+      "projects_link": "Projeler"
+    },
+
+    "projects": {
+    "page_title": "Projelerimiz",
+    "ongoing_projects": "Devam Eden Projeler",
+    "completed_projects": "Tamamlanan Projeler",
+    "view_all_photos": "Tüm Fotoğrafları Gör",
+    "ongoing": {
+      "1": {
+        "name": "Yeni Proje",
+        "location": "İstanbul"
+      }
+    },
+    "completed": {
+      "1": {
+        "name": "Çeliktepe Projesi",
+        "location": "Kağıthane, İstanbul"
+      },
+      "2": {
+        "name": "Bakırköy Projesi",
+        "location": "Bakırköy, İstanbul"
+      },
+      "3": {
+        "name": "Sapanca Projesi",
+        "location": "Sapanca, Sakarya"
+      }
+    }
+  },
+
+  "project_bakirkoy": {
+    "page_title": "Bakırköy Projesi",
+    "name": "Bakırköy Projesi",
+    "location": "Bakırköy/İSTANBUL",
+    "location_label": "Lokasyon",
+    "deliveryDate": "2017",
+    "delivery_label": "Proje Teslim Tarihi",
+    "area": "2450 m²",
+    "area_label": "Toplam İnşaat Alanı",
+    "description": {
+      "1": "Binamız 7 kattan oluşmaktadır.",
+      "2": "14 adet 2+1, 3 adet 4+1 dubleks ve 1 adet dükkan bulunmaktadır."
+    }
+  },
+
+  "project_celiktepe": {
+    "page_title": "Çeliktepe Projesi",
+    "name": "Çeliktepe Projesi",
+    "location": "Çeliktepe Mah. Çiçek Sk. No:16 Kağıthane/İSTANBUL",
+    "location_label": "Lokasyon",
+    "deliveryDate": "2023",
+    "delivery_label": "Proje Teslim Tarihi",
+    "area": "1500 m²",
+    "area_label": "Toplam İnşaat Alanı",
+    "description": "8 adet 2+1 ve 4 adet 4+1 dubleks daireden oluşmaktadır."
+  },
+  "project_sapanca": {
+    "page_title": "Sapanca Projesi",
+    "name": "Sapanca Projesi",
+    "location": "Gazipaşa Mah. İzmit Cad. No:35 Sapanca/SAKARYA",
+    "location_label": "Lokasyon",
+    "deliveryDate": "2020",
+    "delivery_label": "Proje Teslim Tarihi",
+    "area": "1800 m²",
+    "area_label": "Toplam İnşaat Alanı",
+    "description_1": "Binamız 4 kattan oluşmaktadır. 800 m² ticari alan 1000 m² konut alanı vardır.",
+    "description_2": "Toplamda 10 adet 2+1 konut ve 1 adet dükkandan oluşmaktadır."
+  },
+  "menu": {
+    "home": "Ana Sayfa",
+    "projects": "Projeler",
+    "services": "Hizmetlerimiz",
+    "about": "Hakkımızda",
+    "contact": "İletişim",
+    "contact2": "İLETİŞİM",
+    "kgthn": "Kağıthane/ISTANBUL",
+    "ipekci": "İpekçi İnşaat"    
+  },
+  "services": {
+    "construction": {
+      "title": "Kat Karşılığı İnşaat Taahhüt",
+      "description": "Kat karşılığı inşaat, arsa sahipleri ile inşaat firmalarının iş birliği yaparak arsa üzerine yeni yapılar inşa edilmesini öngören bir modeldir. Arsa sahibi arsasındaki belirli bir payın mülkiyetini müteahhite devrederken, müteahhit de arsada modern ve kullanışlı binalar inşa etme taahhüdünde bulunur."
+    },
+    "turnkey": {
+      "title": "Anahtar Teslimi İnşaat",
+      "description": "Anahtar teslimi inşaat, müşterilerin ihtiyaçlarına özel olarak tasarlanan projelerin, başlangıçtan son aşamaya kadar tüm detaylarıyla eksiksiz bir şekilde tamamlanmasıdır. Tüm süreç, profesyonel bir şekilde yönetilerek müşterilerimize hayal ettikleri yapıları zamanında teslim ediyoruz."
+    },
+    "decoration": {
+      "title": "Ev, Ofis, Daire Dekorasyon & Tadilat",
+      "description": "Ev, ofis ve daireler için modern dekorasyon ve tadilat hizmetleri sunuyoruz. Estetik anlayışımızla, yaşam ve çalışma alanlarınızı daha konforlu ve şık bir hale getiriyoruz."
+    },
+    "real_estate": {
+      "title": "Emlak Danışmanlığı",
+      "description": "Emlak danışmanlığı, doğru yatırım kararları almak isteyen bireyler ve kurumlar için kritik bir hizmettir. Alım, satım ve kiralama süreçlerinde uzman ekibimizle yanınızdayız."
+    }
+  },
+  "about": {
+    "title": "Hakkımızda",
+    "founder_name": "İsmail İpekçi",
+    "description": "İpekçi İnşaat, 6 Ocak 2022 tarihinde İstanbul’da kurulmuş olup, inşaat sektöründe yenilikçi ve güvenilir çözümler sunmak amacıyla faaliyetlerine başlamıştır. Şirketimiz, kat karşılığı inşaat, taahhüt projeleri, anahtar teslimi inşaat hizmetleri, ev ve ofis dekorasyonu, daire tadilatları gibi geniş bir hizmet yelpazesi ile müşterilerine profesyonel destek sağlamaktadır. Ayrıca emlak alanında da her türlü ihtiyaçlarınıza çözüm üreten İpekçi İnşaat, müşteri memnuniyetini ve kaliteyi temel prensip olarak benimsemiştir. Modern tasarım anlayışımız ve deneyimli ekibimizle, bireysel ve kurumsal müşterilerimize özel projeler geliştirerek, yaşam alanlarınıza değer katıyoruz.",
+    "vision_title": "Vizyonumuz",
+    "vision": "Müşteri memnuniyetini ve verimliliği öncelikli kılarak, sektörde örnek gösterilen bir başarı standardı oluşturmayı hedefliyoruz.",
+    "mission_title": "Misyonumuz",
+    "mission": "İlham veren, ulaşılabilir yaşam alanları tasarlayarak hayalleri gerçeğe dönüştürmek ve yaşam kalitesini artırmak."
+  },
+  "process": {
+    "title": "Müşterilerimiz İçin Nasıl Çalışıyoruz",
+    "planning": {
+      "title": "Planlama",
+      "description": "Projeleriniz için detaylı planlama yaparak kaynaklarınızı en verimli şekilde kullanmanızı sağlıyoruz. Başarıya giden yolu birlikte belirliyoruz."
+    },
+    "design": {
+      "title": "Tasarım",
+      "description": "Estetik ve fonksiyonelliği bir araya getirerek size özel tasarım çözümleri sunuyoruz. Hayallerinizi gerçeğe dönüştürüyoruz."
+    },
+    "development": {
+      "title": "Geliştirme",
+      "description": "Projelerinizi hayata geçirmek için en son teknolojileri ve yenilikçi yaklaşımları kullanıyoruz. Güvenilir ve hızlı geliştirme süreçleri sunuyoruz."
+    },
+    "delivery": {
+      "title": "Teslim",
+      "description": "Tamamlanan projelerinizi söz verdiğimiz şekilde ve zamanında teslim ediyoruz. Kalite ve müşteri memnuniyeti önceliğimizdir."
+    }
+  },
+
+  "homepage": {
+    "slider": {
+      "services": {
+        "title": "Hizmetlerimiz",
+        "description": "Hayallerinizi gerçeğe dönüştüren kapsamlı inşaat ve emlak çözümleri.",
+        "buttonText": "Hizmetlerimizi İnceleyin"
+      },
+      "projects": {
+        "title": "Projelerimiz",
+        "description": "Tamamlanmış ve devam eden projelerimizi keşfedin.",
+        "buttonText": "Projelerimizi Görün"
+      },
+      "contact": {
+        "title": "İletişim",
+        "description": "Hayallerinizi birlikte inşa edelim.",
+        "buttonText": "Bize Ulaşın"
+      }
+    },
+    "about": {
+      "title": "Hakkımızda",
+      "description": "İpekçi İnşaat, 6 Ocak 2022’de İstanbul’da kurulmuş olup, inşaat ve emlak sektöründe yenilikçi çözümler sunmaktadır. Kat karşılığı inşaat, taahhüt projeleri, anahtar teslim hizmetler, dekorasyon ve tadilat gibi geniş kapsamlı hizmetleriyle müşteri memnuniyetini ön planda tutmaktadır. Modern tasarım anlayışı ve uzman ekibiyle bireysel ve kurumsal projelerde değer yaratmaktadır.",
+      "buttonText": "Devamını Oku"
+    },
+    "whyChooseUs": {
+      "title": "Neden Bizi Seçmelisiniz?",
+      "quality": {
+        "title": "Üstün Kalite",
+        "description": "En yüksek inşaat standartlarına uygun çözümler sunuyoruz."
+      },
+      "reliable": {
+        "title": "Güvenilir Hizmet",
+        "description": "İş süreçlerimizde şeffaf ve güvenilir bir yaklaşım benimsiyoruz."
+      },
+      "innovative": {
+        "title": "Yenilikçi Tasarım",
+        "description": "Modern ve fonksiyonel mimari anlayışıyla projeler geliştiriyoruz."
+      }
+    },
+    "cta": {
+      "title": "Teklif almak için hemen iletişime geçin.",
+      "description": "Hayallerinizi birlikte inşa edelim.",
+      "buttonText": "Teklif Al"
+    }
+  },
+  "new_project": {
+    "name": "Yeni Proje",
+    "location": "İstanbul, Türkiye",
+    "deliveryDate": "2025",
+    "area": "5000 m²",
+    "coming_soon": "Yeni Projemiz Çok Yakında Hizmetinizde",
+    "description": "Sizler için en iyi projeleri geliştirmeye devam ediyoruz. Takipte kalın!",
+    "page_title": "Yeni Proje Detayları"
+  }
+
+}
+  

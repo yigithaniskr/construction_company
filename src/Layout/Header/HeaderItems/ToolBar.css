@@ -1,0 +1,83 @@
+/* Toolbar sağ tarafı hizala */
+.toolbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+/* Dil Butonları */
+.language-selector {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.lang-button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: 2px solid transparent;
+}
+
+.lang-button img {
+    width: 26px;
+    height: 18px;
+    border-radius: 2px;
+}
+
+/* Aktif buton */
+.lang-button.active {
+    border-color: #0047ab;
+}
+
+/* Hover efekti */
+.lang-button:hover {
+    background-color: rgba(0, 71, 171, 0.1);
+}
+
+/* Sosyal Medya İkonları */
+.toolbar-sl-share {
+    display: flex;
+    align-items: center;
+}
+
+.toolbar-sl-share ul {
+    display: flex;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.toolbar-sl-share ul li a {
+    font-size: 18px;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+.toolbar-sl-share ul li a:hover {
+    color: #0047ab;
+}
+
+/* Responsive Ayarlar */
+@media (max-width: 768px) {
+    .toolbar-right {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .language-selector {
+        gap: 5px;
+    }
+
+    .lang-button img {
+        width: 24px;
+        height: 16px;
+    }
+}

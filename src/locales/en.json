@@ -1,0 +1,195 @@
+{
+  "footer": {
+    "company_description": "Ipekci Construction prioritizes customer satisfaction by offering land-for-construction contracts, turnkey projects, decoration, and renovation services. We stand out in the industry with real estate consultancy and quality solutions.",
+    "contact_info": "CONTACT INFORMATION",
+    "address": "Kagithane / Istanbul",
+    "phone": "(+90) 532 558 96 58",
+    "email": "info@ipekciinsaat.com",
+    "services": "OUR SERVICES",
+    "service_list": {
+      "construction": "Land-for-Construction Contracts",
+      "turnkey": "Turnkey Construction",
+      "decoration": "Home, Office, Apartment Decoration & Renovation",
+      "real_estate": "Real Estate Consultancy"
+    },
+    "projects": "Our Projects",
+    "projects_link": "Projects"
+  },
+
+  "projects": {
+    "page_title": "Our Projects",
+    "ongoing_projects": "Ongoing Projects",
+    "completed_projects": "Completed Projects",
+    "view_all_photos": "View All Photos",
+    "ongoing": {
+      "1": {
+        "name": "New Project",
+        "location": "Istanbul"
+      }
+    },
+    "completed": {
+      "1": {
+        "name": "Celiktepe Project",
+        "location": "Kagithane, Istanbul"
+      },
+      "2": {
+        "name": "Bakirkoy Project",
+        "location": "Bakirkoy, Istanbul"
+      },
+      "3": {
+        "name": "Sapanca Project",
+        "location": "Sapanca, Sakarya"
+      }
+    }
+  },
+
+  "project_bakirkoy": {
+    "page_title": "Bakirkoy Project",
+    "name": "Bakirkoy Project",
+    "location": "Bakirkoy/ISTANBUL",
+    "location_label": "Location",
+    "deliveryDate": "2017",
+    "delivery_label": "Project Delivery Date",
+    "area": "2450 m²",
+    "area_label": "Total Construction Area",
+    "description": {
+      "1": "Our building consists of 7 floors.",
+      "2": "It includes 14 units of 2+1 apartments, 3 duplex 4+1 units, and 1 shop."
+    }
+  },
+
+  "project_celiktepe": {
+    "page_title": "Celiktepe Project",
+    "name": "Celiktepe Project",
+    "location": "Celiktepe Mah. Cicek St. No:16 Kagithane/ISTANBUL",
+    "location_label": "Location",
+    "deliveryDate": "2023",
+    "delivery_label": "Project Delivery Date",
+    "area": "1500 m²",
+    "area_label": "Total Construction Area",
+    "description": "Consists of 8 units of 2+1 and 4 duplex 4+1 apartments."
+  },
+  "project_sapanca": {
+    "page_title": "Sapanca Project",
+    "name": "Sapanca Project",
+    "location": "Gazipasa Mah. Izmit St. No:35 Sapanca/SAKARYA",
+    "location_label": "Location",
+    "deliveryDate": "2020",
+    "delivery_label": "Project Delivery Date",
+    "area": "1800 m²",
+    "area_label": "Total Construction Area",
+    "description_1": "The building consists of 4 floors. It has 800 m² of commercial space and 1000 m² of residential space.",
+    "description_2": "It consists of 10 units of 2+1 apartments and 1 shop."
+  },
+  "menu": {
+    "home": "Home",
+    "projects": "Projects",
+    "services": "Our Services",
+    "about": "About Us",
+    "contact": "Contact",
+    "contact2": "CONTACT",
+    "kgthn": "Kagithane/ISTANBUL",
+    "ipekci": "İpekci Construction"
+  },
+
+  "services": {
+    "construction": {
+      "title": "Land-for-Construction",
+      "description": "Land-for-construction agreements involve collaboration between landowners and construction companies to develop new structures. The landowner transfers ownership of a specific portion of the land to the contractor, while the contractor undertakes to build modern and functional buildings."
+    },
+    "turnkey": {
+      "title": "Turnkey Construction",
+      "description": "Turnkey construction involves designing and completing projects tailored to customers' needs from start to finish. We manage the entire process professionally, delivering dream structures on time."
+    },
+    "decoration": {
+      "title": "Home, Office, Apartment Decoration & Renovation",
+      "description": "We offer modern decoration and renovation services for homes, offices, and apartments. With our aesthetic approach, we enhance living and working spaces, making them more comfortable and stylish."
+    },
+    "real_estate": {
+      "title": "Real Estate Consultancy",
+      "description": "Real estate consultancy is crucial for individuals and businesses looking to make informed investment decisions. We assist with buying, selling, and rental processes with expert market analysis."
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "founder_name": "İsmail İpekçi",
+    "description": "Ipekçi Construction was founded in Istanbul on January 6, 2022, with the goal of providing innovative and reliable solutions in the construction sector. Our company offers a wide range of services, including land-for-construction agreements, contract projects, turnkey construction, home and office decoration, and apartment renovations. Additionally, Ipekci Construction provides solutions for all your real estate needs, prioritizing customer satisfaction and quality. With our modern design approach and experienced team, we develop customized projects for individual and corporate clients, adding value to living spaces.",
+    "vision_title": "Our Vision",
+    "vision": "We aim to establish a benchmark of excellence in the industry by prioritizing customer satisfaction and efficiency.",
+    "mission_title": "Our Mission",
+    "mission": "To transform dreams into reality by designing inspiring and accessible living spaces, enhancing the quality of life."
+  },
+  "process": {
+    "title": "How We Work for Our Customers",
+    "planning": {
+      "title": "Planning",
+      "description": "We provide detailed planning for your projects, ensuring the most efficient use of your resources. We determine the path to success together."
+    },
+    "design": {
+      "title": "Design",
+      "description": "We combine aesthetics and functionality to offer custom design solutions. We turn your dreams into reality."
+    },
+    "development": {
+      "title": "Development",
+      "description": "We bring your projects to life using the latest technologies and innovative approaches. We offer reliable and fast development processes."
+    },
+    "delivery": {
+      "title": "Delivery",
+      "description": "We deliver your completed projects as promised and on time. Quality and customer satisfaction are our priorities."
+    }
+  },
+
+  "homepage": {
+    "slider": {
+      "services": {
+        "title": "Our Services",
+        "description": "Comprehensive construction and real estate solutions that turn your dreams into reality.",
+        "buttonText": "Explore Our Services"
+      },
+      "projects": {
+        "title": "Our Projects",
+        "description": "Discover our completed and ongoing projects.",
+        "buttonText": "View Projects"
+      },
+      "contact": {
+        "title": "Contact Us",
+        "description": "Let's build your dreams together.",
+        "buttonText": "Get in Touch"
+      }
+    },
+    "about": {
+      "title": "About Us",
+      "description": "İpekci Construction was established on January 6, 2022, in Istanbul, offering innovative solutions in the construction and real estate sector. The company specializes in land-for-construction contracts, project contracting, turnkey construction services, home and office decoration, and apartment renovations. With a strong focus on customer satisfaction and quality, Ipekci Construction provides professional services tailored to individual and corporate clients.",
+      "buttonText": "Read More"
+    },
+    "whyChooseUs": {
+      "title": "Why Choose Us?",
+      "quality": {
+        "title": "Superior Quality",
+        "description": "We offer solutions that comply with the highest construction standards."
+      },
+      "reliable": {
+        "title": "Reliable Service",
+        "description": "We adopt a transparent and trustworthy approach in our business processes."
+      },
+      "innovative": {
+        "title": "Innovative Design",
+        "description": "We develop projects with a modern and functional architectural approach."
+      }
+    },
+    "cta": {
+      "title": "Contact us now to get a offer.",
+      "description": "Let's build your dreams together.",
+      "buttonText": "Get a Quote"
+    }
+  },
+    "new_project": {
+    "name": "New Project",
+    "location": "Istanbul, Turkey",
+    "deliveryDate": "2025",
+    "area": "5000 m²",
+    "coming_soon": "Our New Project is Coming Soon!",
+    "description": "We continue to develop the best projects for you. Stay tuned!",
+    "page_title": "New Project Details"
+  }
+}
