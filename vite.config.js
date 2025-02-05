@@ -7,9 +7,5 @@ export default defineConfig({
     outDir: 'dist',
     chunkSizeWarningLimit: 1000,
   },
-  base: '/', // Kök dizin kullanımı için ayarlayın
-  server: {
-    host: 'localhost',
-    port: '3000'
-  }
+  base: '/' // Kök dizin kullanımı için ayarlayın
 });
