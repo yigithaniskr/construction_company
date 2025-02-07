@@ -8,7 +8,7 @@ export default defineConfig({
     },
   },
   plugins: [],
-  base: "./",  // Bunu ekledik
+  base: "./",  // Bunu ekledik/
   build: {
     outDir: "dist", // Vercel’in doğru klasörü alması için
     assetsDir: "assets", // Vite’in dosyaları düzgün kaydetmesini sağlamak için
