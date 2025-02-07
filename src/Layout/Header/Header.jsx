@@ -20,6 +20,11 @@ const Header = ({
     const [isSticky, setSticky] = useState(false);
     const [navExpanded, setNavExpanded] = useState(false);
 
+    const changeLanguage = (lng) => {
+        t.changeLanguage(lng);
+    };
+    
+
     const handleScroll = () => {
         setSticky(window.scrollY > 70);
     };
@@ -223,6 +228,23 @@ const Header = ({
                             </div>
                             <div className="info-content">
                                 <em className="title"><Link to="tel:+905325589658">+90 532 558 96 58</Link></em>
+                            </div>
+                            
+                        </div>
+                        <div className="language-selector-container">
+                            <div className="language-selector">
+                                <button 
+                                    className={`lang-button ${t.language === 'tr' ? 'active' : ''}`} 
+                                    onClick={() => changeLanguage('tr')}
+                                >
+                                    <img src="https://flagcdn.com/w40/tr.png" alt="Türk Bayrağı" />
+                                </button>
+                                <button 
+                                    className={`lang-button ${t.language === 'en' ? 'active' : ''}`} 
+                                    onClick={() => changeLanguage('en')}
+                                >
+                                    <img src="https://flagcdn.com/w40/us.png" alt="Amerikan Bayrağı" />
+                                </button>
                             </div>
                         </div>
                     </div>
