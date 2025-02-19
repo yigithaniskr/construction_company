@@ -23,14 +23,14 @@
     "view_all_photos": "View All Photos",
     "ongoing": {
       "1": {
-        "name": "New Project",
-        "location": "Istanbul"
+        "name": "Celiktepe Urban Transformation Project",
+        "location": "Celiktepe, Istanbul"
       }
     },
     "completed": {
       "1": {
         "name": "Celiktepe Construction Project",
-        "location": "Kagithane, Istanbul"
+        "location": "Celiktepe, Istanbul"
       },
       "2": {
         "name": "Bakirkoy Construction Project",
@@ -146,7 +146,7 @@
   "about": {
     "title": "About Us",
     "founder_name": "İsmail İpekçi",
-    "description": "Ipekçi Construction was founded in Istanbul on January 6, 2022, with the goal of providing innovative and reliable solutions in the construction sector. Our company offers a wide range of services, including land-for-construction agreements, contract projects, turnkey construction, home and office decoration, and apartment renovations. Additionally, Ipekci Construction provides solutions for all your real estate needs, prioritizing customer satisfaction and quality. With our modern design approach and experienced team, we develop customized projects for individual and corporate clients, adding value to living spaces.",
+    "description": "Ipekçi Construction was founded in Istanbul, with the goal of providing innovative and reliable solutions in the construction sector. Our company offers a wide range of services, including land-for-construction agreements, contract projects, turnkey construction, home and office decoration, and apartment renovations. Additionally, Ipekci Construction provides solutions for all your real estate needs, prioritizing customer satisfaction and quality. With our modern design approach and experienced team, we develop customized projects for individual and corporate clients, adding value to living spaces.",
     "vision_title": "Our Vision",
     "vision": "We aim to establish a benchmark of excellence in the industry by prioritizing customer satisfaction and efficiency.",
     "mission_title": "Our Mission",
@@ -192,7 +192,7 @@
     },
     "about": {
       "title": "About Us",
-      "description": "İpekci Construction was established on January 6, 2022, in Istanbul, offering innovative solutions in the construction and real estate sector. The company specializes in land-for-construction contracts, project contracting, turnkey construction services, home and office decoration, and apartment renovations. With a strong focus on customer satisfaction and quality, Ipekci Construction provides professional services tailored to individual and corporate clients.",
+      "description": "İpekci Construction was established in Istanbul, offering innovative solutions in the construction and real estate sector. The company specializes in land-for-construction contracts, project contracting, turnkey construction services, home and office decoration, and apartment renovations. With a strong focus on customer satisfaction and quality, Ipekci Construction provides professional services tailored to individual and corporate clients.",
       "buttonText": "Read More"
     },
     "whyChooseUs": {
@@ -216,13 +216,16 @@
       "buttonText": "Get a Quote"
     }
   },
-    "new_project": {
-    "name": "New Project",
-    "location": "Istanbul, Turkey",
-    "deliveryDate": "2025",
-    "area": "5000 m²",
-    "coming_soon": "Our New Project is Coming Soon!",
-    "description": "We continue to develop the best projects for you. Stay tuned!",
-    "page_title": "New Project Details"
-  }
+  "project_celiktepe_kentsel": {
+    "page_title": "Çeliktepe Urban Transformation Project",
+    "name": "Çeliktepe Urban Transformation Project",
+    "location": "Çeliktepe Mah. Evren St. No:2 Kağıthane/İSTANBUL",
+    "location_label": "Location",
+    "deliveryDate": "The project is currently in the permit stage and is expected to be completed approximately one year after the permit is approved.",
+    "delivery_label": "Project Delivery Date",
+    "area": "1500 m²",
+    "area_label": "Square Meters",
+    "description": "Consists of 8 units of 2+1 apartments and 2 units of 3+1 duplex apartments."
+}
+
 }

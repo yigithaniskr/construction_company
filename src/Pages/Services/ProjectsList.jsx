@@ -22,8 +22,8 @@ const ProjectsList = () => {
             id: 1,
             name: t("projects.ongoing.1.name"),
             location: t("projects.ongoing.1.location"),
-            image: "/new_proje.png",
-            detailsLink: "/proje-detaylari-yeni-proje",
+            image: "/Çeliktepe_kentsel2.png",
+            detailsLink: "/proje-detaylari-çeliktepe-kentsel-donüşüm",
         },
     ];
 

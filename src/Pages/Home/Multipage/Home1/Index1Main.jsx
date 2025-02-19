@@ -92,7 +92,7 @@ const Index1Main = () => {
         <div className="company-text">
           <h2>{t("homepage.about.title")}</h2>
           <p>{t("homepage.about.description")}</p>
-          <Link to="/hakkımızda" className="read-more-button">
+          <Link to="/hakkımızda" className="read-more-button" onClick={() => window.scrollTo(0, 0)}>
             {t("homepage.about.buttonText")}
           </Link>
         </div>

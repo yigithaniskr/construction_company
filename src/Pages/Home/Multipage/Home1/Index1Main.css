@@ -153,8 +153,11 @@ body {
     }
 
     .cta-section h2 {
-        font-size: 20px;
-        white-space: normal;
+         font-size: 16px; /* Daha küçük başlık */
+        white-space: nowrap; /* Metni tek satırda tutmaya çalışır */
+        max-width: 100%; /* Taşmayı önler */
+        overflow: hidden;
+        text-overflow: ellipsis; /* Çok uzun olursa kesip üç nokta koyar */
     }
 
     .cta-section p {

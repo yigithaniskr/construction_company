@@ -23,14 +23,14 @@
     "view_all_photos": "Tüm Fotoğrafları Gör",
     "ongoing": {
       "1": {
-        "name": "Yeni Proje",
-        "location": "İstanbul"
+        "name": "Çeliktepe Kentsel Dönüşüm Projesi",
+        "location": "Çeliktepe, İstanbul"
       }
     },
     "completed": {
       "1": {
         "name": "Çeliktepe İnşaat Projesi",
-        "location": "Kağıthane, İstanbul"
+        "location": "Çeliktepe, İstanbul"
       },
       "2": {
         "name": "Bakırköy İnşaat Projesi",
@@ -144,7 +144,7 @@
   "about": {
     "title": "Hakkımızda",
     "founder_name": "İsmail İpekçi",
-    "description": "İpekçi İnşaat, 6 Ocak 2022 tarihinde İstanbul’da kurulmuş olup, inşaat sektöründe yenilikçi ve güvenilir çözümler sunmak amacıyla faaliyetlerine başlamıştır. Şirketimiz, kat karşılığı inşaat, taahhüt projeleri, anahtar teslimi inşaat hizmetleri, ev ve ofis dekorasyonu, daire tadilatları gibi geniş bir hizmet yelpazesi ile müşterilerine profesyonel destek sağlamaktadır. Ayrıca emlak alanında da her türlü ihtiyaçlarınıza çözüm üreten İpekçi İnşaat, müşteri memnuniyetini ve kaliteyi temel prensip olarak benimsemiştir. Modern tasarım anlayışımız ve deneyimli ekibimizle, bireysel ve kurumsal müşterilerimize özel projeler geliştirerek, yaşam alanlarınıza değer katıyoruz.",
+    "description": "İpekçi İnşaat, İstanbul’da kurulmuş olup, inşaat sektöründe yenilikçi ve güvenilir çözümler sunmak amacıyla faaliyetlerine başlamıştır. Şirketimiz, kat karşılığı inşaat, taahhüt projeleri, anahtar teslimi inşaat hizmetleri, ev ve ofis dekorasyonu, daire tadilatları gibi geniş bir hizmet yelpazesi ile müşterilerine profesyonel destek sağlamaktadır. Ayrıca emlak alanında da her türlü ihtiyaçlarınıza çözüm üreten İpekçi İnşaat, müşteri memnuniyetini ve kaliteyi temel prensip olarak benimsemiştir. Modern tasarım anlayışımız ve deneyimli ekibimizle, bireysel ve kurumsal müşterilerimize özel projeler geliştirerek, yaşam alanlarınıza değer katıyoruz.",
     "vision_title": "Vizyonumuz",
     "vision": "Müşteri memnuniyetini ve verimliliği öncelikli kılarak, sektörde örnek gösterilen bir başarı standardı oluşturmayı hedefliyoruz.",
     "mission_title": "Misyonumuz",
@@ -190,7 +190,7 @@
     },
     "about": {
       "title": "Hakkımızda",
-      "description": "İpekçi İnşaat, 6 Ocak 2022’de İstanbul’da kurulmuş olup, inşaat ve emlak sektöründe yenilikçi çözümler sunmaktadır. Kat karşılığı inşaat, taahhüt projeleri, anahtar teslim hizmetler, dekorasyon ve tadilat gibi geniş kapsamlı hizmetleriyle müşteri memnuniyetini ön planda tutmaktadır. Modern tasarım anlayışı ve uzman ekibiyle bireysel ve kurumsal projelerde değer yaratmaktadır.",
+      "description": "İpekçi İnşaat, İstanbul’da kurulmuş olup, inşaat ve emlak sektöründe yenilikçi çözümler sunmaktadır. Kat karşılığı inşaat, taahhüt projeleri, anahtar teslim hizmetler, dekorasyon ve tadilat gibi geniş kapsamlı hizmetleriyle müşteri memnuniyetini ön planda tutmaktadır. Modern tasarım anlayışı ve uzman ekibiyle bireysel ve kurumsal projelerde değer yaratmaktadır.",
       "buttonText": "Devamını Oku"
     },
     "whyChooseUs": {
@@ -214,15 +214,16 @@
       "buttonText": "Teklif Al"
     }
   },
-  "new_project": {
-    "name": "Yeni Proje",
-    "location": "İstanbul, Türkiye",
-    "deliveryDate": "2025",
-    "area": "5000 m²",
-    "coming_soon": "Yeni Projemiz Çok Yakında Hizmetinizde",
-    "description": "Sizler için en iyi projeleri geliştirmeye devam ediyoruz. Takipte kalın!",
-    "page_title": "Yeni Proje Detayları"
+  "project_celiktepe_kentsel": {
+    "page_title": "Çeliktepe Kentsel Dönüşüm Projesi",
+    "name": "Çeliktepe Kentsel Dönüşüm Projesi",
+    "location": "Çeliktepe Mah. Evren Sk. No:2 Kağıthane/İSTANBUL",
+    "location_label": "Lokasyon",
+    "deliveryDate": "Proje şu anda ruhsat aşamasında olup, ruhsat onaylandıktan sonra ortalama 1 yıl içinde tamamlanması planlanmaktadır",
+    "delivery_label": "Proje Teslim Tarihi",
+    "area": "1500 m²",
+    "area_label": "Metrekare",
+    "description": "8 adet 2+1 ve 2 adet 3+1 dubleks daireden oluşmaktadır."
   }
-
 }
   

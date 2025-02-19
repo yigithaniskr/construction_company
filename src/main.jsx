@@ -20,6 +20,7 @@ import './i18n';
 import ProjectDetailsNewProject from './Pages/Services/ProjectDetailsNewProject';
 import ProjectDetailsKağıthane from './Pages/Services/ProjectDetailsKağıthane';
 import ProjectDetailsSisli from './Pages/Services/ProjectDetailsSisli';
+import ProjectDetailsÇeliktepeKentsel from './Pages/Services/ProjectDetailsÇeliktepeKentsel';
 
 // Vite preloadError event listener
 window.addEventListener('vite:preloadError', (event) => {
@@ -40,6 +41,7 @@ const router = createBrowserRouter([
   { path: "/proje-detaylari-yeni-proje", element: <ProjectDetailsNewProject /> },
   { path: "/proje-detaylari-kağıthane", element: <ProjectDetailsKağıthane /> },
   { path: "/proje-detaylari-sisli", element: <ProjectDetailsSisli /> },
+  { path: "/proje-detaylari-çeliktepe-kentsel-donüşüm", element: <ProjectDetailsÇeliktepeKentsel /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
