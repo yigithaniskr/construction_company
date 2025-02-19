@@ -29,23 +29,31 @@
     },
     "completed": {
       "1": {
-        "name": "Çeliktepe Projesi",
+        "name": "Çeliktepe İnşaat Projesi",
         "location": "Kağıthane, İstanbul"
       },
       "2": {
-        "name": "Bakırköy Projesi",
+        "name": "Bakırköy İnşaat Projesi",
         "location": "Bakırköy, İstanbul"
       },
       "3": {
-        "name": "Sapanca Projesi",
+        "name": "Sapanca İnşaat Projesi",
         "location": "Sapanca, Sakarya"
+      },
+      "4": {
+        "name": "Kağıthane İnşaat Projesi",
+        "location": "Kağıthane, İstanbul"
+      },
+      "5": {
+        "name": "Şişli Dekorasyon Projesi",
+        "location": "Şişli, İstanbul"
       }
     }
   },
 
   "project_bakirkoy": {
-    "page_title": "Bakırköy Projesi",
-    "name": "Bakırköy Projesi",
+    "page_title": "Bakırköy İnşaat Projesi",
+    "name": "Bakırköy İnşaat Projesi",
     "location": "Bakırköy/İSTANBUL",
     "location_label": "Lokasyon",
     "deliveryDate": "2017",
@@ -59,8 +67,8 @@
   },
 
   "project_celiktepe": {
-    "page_title": "Çeliktepe Projesi",
-    "name": "Çeliktepe Projesi",
+    "page_title": "Çeliktepe İnşaat Projesi",
+    "name": "Çeliktepe İnşaat Projesi",
     "location": "Çeliktepe Mah. Çiçek Sk. No:16 Kağıthane/İSTANBUL",
     "location_label": "Lokasyon",
     "deliveryDate": "2023",
@@ -70,8 +78,8 @@
     "description": "8 adet 2+1 ve 4 adet 4+1 dubleks daireden oluşmaktadır."
   },
   "project_sapanca": {
-    "page_title": "Sapanca Projesi",
-    "name": "Sapanca Projesi",
+    "page_title": "Sapanca İnşaat Projesi",
+    "name": "Sapanca İnşaat Projesi",
     "location": "Gazipaşa Mah. İzmit Cad. No:35 Sapanca/SAKARYA",
     "location_label": "Lokasyon",
     "deliveryDate": "2020",
@@ -80,6 +88,30 @@
     "area_label": "Toplam İnşaat Alanı",
     "description_1": "Binamız 4 kattan oluşmaktadır. 800 m² ticari alan 1000 m² konut alanı vardır.",
     "description_2": "Toplamda 10 adet 2+1 konut ve 1 adet dükkandan oluşmaktadır."
+  },
+  "project_kagithane": {
+    "page_title": "Kağıthane İnşaat Projesi",
+    "name": "Kağıthane İnşaat Projesi",
+    "location": "Şirintepe Mah. Ağaçlı Sok. No:23/25 Kağıthane/İstanbul",
+    "location_label": "Lokasyon",
+    "deliveryDate": "2016",
+    "delivery_label": "Proje Teslim Tarihi",
+    "area": "2400 m²",
+    "area_label": "Daire Metrekaresi",
+    "description_1": "Binamız 18 adet 2+1, 2 adet 3+1 dubleks ve 1 adet 4+1 dubleks olmak üzere toplam 21 daireden oluşmaktadır."
+  },
+  "project_sisli": {
+    "page_title": "Şişli Dekorasyon Projesi",
+    "name": "Şişli Dekorasyon Projesi",
+    "location": "Cumhuriyet Mah. Şişli/İstanbul",
+    "location_label": "Lokasyon",
+    "deliveryDate": "2022",
+    "delivery_label": "Proje Teslim Tarihi",
+    "area": "150 m²",
+    "area_label": "Metrekare",
+    "description_1": "Mutfakta yeni dolaplar, modern fayanslar ve kullanışlı bir düzen sağlanmıştır.",
+    "description_2": "Banyoda şık duş kabini, seramik fayanslar ve sıhhi tesisat donanımları yenilenmiştir",
+    "description_3":"Tüm yaşam alanlarında zemin döşemesi, duvar boyaları ve kapılar yenilenerek daireye modern ve ferah bir atmosfer kazandırılmıştır"
   },
   "menu": {
     "home": "Ana Sayfa",

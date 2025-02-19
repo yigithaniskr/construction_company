@@ -37,7 +37,11 @@ const MenuItem = ({ isMobile, isOnePage, handleCloseMobileMenu }) => {
         return activeMenu === menuItem ? 'active' : '';
     };
 
-
+    // ✅ Dil değiştirme fonksiyonu (Sayfanın tekrar yüklenmesini önler)
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+        localStorage.setItem('selectedLanguage', lng); // ✅ Kullanıcının seçimini kaydet
+    };
 
     return (
         <>
@@ -99,8 +103,24 @@ const MenuItem = ({ isMobile, isOnePage, handleCloseMobileMenu }) => {
                             {t("menu.contact")}
                         </button>
                     </li>
-                    {/* Dil Değiştirme Butonları */}
-                   
+
+                    {/* ✅ Dil Değiştirme Butonları (Yan Yana Görünecek Şekilde) */}
+                    <div className="language-selector-container">
+                        <div className="language-selector">
+                            <button
+                                className={`lang-button ${i18n.language === 'tr' ? 'active' : ''}`}
+                                onClick={() => changeLanguage('tr')}
+                            >
+                                <img src="https://flagcdn.com/w40/tr.png" alt="Türk Bayrağı" />
+                            </button>
+                            <button
+                                className={`lang-button ${i18n.language === 'en' ? 'active' : ''}`}
+                                onClick={() => changeLanguage('en')}
+                            >
+                                <img src="https://flagcdn.com/w40/us.png" alt="Amerikan Bayrağı" />
+                            </button>
+                        </div>
+                    </div>
                 </div>
             )}
         </>

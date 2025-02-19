@@ -29,23 +29,31 @@
     },
     "completed": {
       "1": {
-        "name": "Celiktepe Project",
+        "name": "Celiktepe Construction Project",
         "location": "Kagithane, Istanbul"
       },
       "2": {
-        "name": "Bakirkoy Project",
+        "name": "Bakirkoy Construction Project",
         "location": "Bakirkoy, Istanbul"
       },
       "3": {
-        "name": "Sapanca Project",
+        "name": "Sapanca Construction Project",
         "location": "Sapanca, Sakarya"
+      },
+      "4": {
+        "name": "Kagithane Construction Project",
+        "location": "Kagithane, Istanbul"
+      },
+      "5": {
+        "name": "Sisli Decoration Project",
+        "location": "Sisli, Istanbul"
       }
     }
   },
 
   "project_bakirkoy": {
-    "page_title": "Bakirkoy Project",
-    "name": "Bakirkoy Project",
+    "page_title": "Bakirkoy Construction Project",
+    "name": "Bakirkoy Construction Project",
     "location": "Bakirkoy/ISTANBUL",
     "location_label": "Location",
     "deliveryDate": "2017",
@@ -59,8 +67,8 @@
   },
 
   "project_celiktepe": {
-    "page_title": "Celiktepe Project",
-    "name": "Celiktepe Project",
+    "page_title": "Celiktepe Construction Project",
+    "name": "Celiktepe Construction Project",
     "location": "Celiktepe Mah. Cicek St. No:16 Kagithane/ISTANBUL",
     "location_label": "Location",
     "deliveryDate": "2023",
@@ -70,8 +78,8 @@
     "description": "Consists of 8 units of 2+1 and 4 duplex 4+1 apartments."
   },
   "project_sapanca": {
-    "page_title": "Sapanca Project",
-    "name": "Sapanca Project",
+    "page_title": "Sapanca Construction Project",
+    "name": "Sapanca Construction Project",
     "location": "Gazipasa Mah. Izmit St. No:35 Sapanca/SAKARYA",
     "location_label": "Location",
     "deliveryDate": "2020",
@@ -81,6 +89,31 @@
     "description_1": "The building consists of 4 floors. It has 800 m² of commercial space and 1000 m² of residential space.",
     "description_2": "It consists of 10 units of 2+1 apartments and 1 shop."
   },
+  "project_kagithane": {
+    "page_title": "Kagithane Construction Project",
+    "name": "Kagithane Construction Project",
+    "location": "Sirintepe Mah. Agacli Sok. No:23/25 Kagithane/Istanbul",
+    "location_label": "Location",
+    "deliveryDate": "2016",
+    "delivery_label": "Project Delivery Date",
+    "area": "2400 m²",
+    "area_label": "Total Construction Area",
+    "description_1": "Our building consists of a total of 21 apartments, including 18 units of 2+1, 2 duplex units of 3+1, and 1 duplex unit of 4+1.",
+    "description_2": "It consists of a total of 10 units of 2+1 residences and 1 commercial shop."
+  },
+  "project_sisli": {
+  "page_title": "Sisli Decoration Project",    
+  "name": "Sisli Decoration Project",
+  "location": "Cumhuriyet Neighborhood, Sisli/Istanbul",
+  "location_label": "Location",
+  "deliveryDate": "2022",
+  "delivery_label": "Project Delivery Date",
+  "area": "150 m²",
+  "area_label": "Square Meters",
+  "description_1": "In the kitchen, new cabinets, modern tiles, and a functional layout were implemented.",
+  "description_2": "The bathroom was renovated with a stylish shower cabin, ceramic tiles, and updated sanitary equipment.",
+  "description_3": "All living areas were refreshed with new flooring, wall paints, and doors, giving the apartment a modern and spacious atmosphere."
+},
   "menu": {
     "home": "Home",
     "projects": "Projects",

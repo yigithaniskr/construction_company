@@ -31,7 +31,7 @@ const Footer = ({ logo, footerStyle }) => {
                                         src={logo} 
                                         alt="Logo" 
                                         className="footer-logo" 
-                                        style={{ width: "100%", maxWidth: "300px", height: "100px" }} 
+                                        style={{ width: "100%", maxWidth: "300px", height: "90px" }} 
                                     />
                                 </Link>
                             </div>

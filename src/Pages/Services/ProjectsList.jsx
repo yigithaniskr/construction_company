@@ -2,8 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next'; // Çeviri desteği için eklendi
 import './ProjectsList.css';
-import headerLogoNormal from "/last_logo.png";
-import logo from '/last_logo.png';
+import headerLogoNormal from "/blue-logo.png";
+import logo from '/blue-logo.png';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import Header from '../../Layout/Header/Header';
 import FooterMain from '../../Layout/Footer/FooterMain';
@@ -39,7 +39,7 @@ const ProjectsList = () => {
             id: 3,
             name: t("projects.completed.2.name"),
             location: t("projects.completed.2.location"),
-            image: "/Bakırköy2.png",
+            image: "/Bakırköy1.png",
             detailsLink: "/proje-detaylari-bakırköy",
         },
         {
@@ -48,6 +48,20 @@ const ProjectsList = () => {
             location: t("projects.completed.3.location"),
             image: "/Sapanca5.png",
             detailsLink: "/proje-detaylari-sapanca",
+        },
+        {
+            id: 5,
+            name: t("projects.completed.4.name"),
+            location: t("projects.completed.4.location"),
+            image: "/Kağıthane4.png",
+            detailsLink: "/proje-detaylari-kağıthane",
+        },
+        {
+            id: 6,
+            name: t("projects.completed.5.name"),
+            location: t("projects.completed.5.location"),
+            image: "/Bomonti1.png",
+            detailsLink: "/proje-detaylari-sisli",
         },
     ];
 

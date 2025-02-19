@@ -14,14 +14,14 @@ const Header = ({
     isOnePage, headerParentCls
 }) => {
 
-    const { t } = useTranslation(); // i18n çeviri fonksiyonu kullanımı
+    const { t,i18n } = useTranslation(); // i18n çeviri fonksiyonu kullanımı
     const [searchValue, setSearchValue] = useState('');
     const [searchVisible, setSearchVisible] = useState(false);
     const [isSticky, setSticky] = useState(false);
     const [navExpanded, setNavExpanded] = useState(false);
 
     const changeLanguage = (lng) => {
-        t.changeLanguage(lng);
+        i18n.changeLanguage(lng);
     };
     
 
@@ -231,22 +231,7 @@ const Header = ({
                             </div>
                             
                         </div>
-                        <div className="language-selector-container">
-                            <div className="language-selector">
-                                <button 
-                                    className={`lang-button ${t.language === 'tr' ? 'active' : ''}`} 
-                                    onClick={() => changeLanguage('tr')}
-                                >
-                                    <img src="https://flagcdn.com/w40/tr.png" alt="Türk Bayrağı" />
-                                </button>
-                                <button 
-                                    className={`lang-button ${t.language === 'en' ? 'active' : ''}`} 
-                                    onClick={() => changeLanguage('en')}
-                                >
-                                    <img src="https://flagcdn.com/w40/us.png" alt="Amerikan Bayrağı" />
-                                </button>
-                            </div>
-                        </div>
+                       
                     </div>
                 </div>
             </nav>

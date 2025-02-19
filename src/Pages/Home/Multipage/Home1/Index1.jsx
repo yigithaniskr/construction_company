@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from '../../../../Layout/Header/Header';
-import headerLogoNormal from "/last_logo.png";
+import headerLogoNormal from "/blue-logo.png";
 import Index1Main from './Index1Main';
-import logo from '/last_logo.png';
+import logo from '/blue-logo.png';
 import FooterMain from '../../../../Layout/Footer/FooterMain';
 import ScrollToTop from '../../../../Layout/ScrollToTop/ScrollToTop';
 import { Helmet, HelmetProvider } from 'react-helmet-async';

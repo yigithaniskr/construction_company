@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 const ScrollToTop = ({ scrollClassName, bgColor, hoverColor, hoverIconColor, iconColor }) => {
   const [isVisible, setIsVisible] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+  const [isClicked, setIsClicked] = useState(false); // ✅ Butona tıklanınca renk değişimini izler
 
   const styles = {
     button: {
@@ -11,7 +12,7 @@ const ScrollToTop = ({ scrollClassName, bgColor, hoverColor, hoverIconColor, ico
       right: '40px',
       width: '42px',
       height: '2.5rem',
-      backgroundColor: isHovered ? hoverColor : bgColor,
+      backgroundColor: isClicked ? 'black' : (isHovered ? hoverColor : bgColor), // ✅ Tıklandıktan sonra siyah, ama sonra sıfırlanıyor
       color: isHovered ? hoverIconColor : iconColor,
       borderRadius: '2px',
       display: 'flex',
@@ -33,10 +34,16 @@ const ScrollToTop = ({ scrollClassName, bgColor, hoverColor, hoverIconColor, ico
 
   const scrollToTop = () => {
     if (isVisible) {
+      setIsClicked(true); // ✅ Tıklanınca siyah yap
       window.scrollTo({
         top: 0,
         behavior: "smooth"
       });
+
+      // ✅ 1 saniye sonra orijinal renge geri dönsün
+      setTimeout(() => {
+        setIsClicked(false);
+      }, 1000);
     }
   };
 
@@ -45,6 +52,7 @@ const ScrollToTop = ({ scrollClassName, bgColor, hoverColor, hoverIconColor, ico
       setIsVisible(true);
     } else {
       setIsVisible(false);
+      setIsClicked(false); // ✅ En üste çıkınca tekrar eski rengine dön
     }
   };
 

@@ -8,22 +8,23 @@ import Header from "../../Layout/Header/Header";
 import FooterMain from "../../Layout/Footer/FooterMain";
 import ScrollToTop from "../../Layout/ScrollToTop/ScrollToTop";
 
-const ProjectDetailsBakirköy = () => {
+const ProjectDetailsSisli = () => {
   const { t } = useTranslation(); // i18n çeviri fonksiyonu kullanımı
   const [lightboxIndex, setLightboxIndex] = useState(null);
 
   const projectInfo = {
-    name: t("project_bakirkoy.name"),
-    location: t("project_bakirkoy.location"),
-    deliveryDate: t("project_bakirkoy.deliveryDate"),
-    area: t("project_bakirkoy.area"),
+    name: t("project_sisli.name"),
+    location: t("project_sisli.location"),
+    deliveryDate: t("project_sisli.deliveryDate"),
+    area: t("project_sisli.area"),
     description: [
-      t("project_bakirkoy.description.1"),
-      t("project_bakirkoy.description.2"),
+      t("project_sisli.description_1"),
+      t("project_sisli.description_2"),
+      t("project_sisli.description_3"),
     ],
   };
 
-  const projectImages = ["/Bakırköy1.png", "/Bakırköy2.png", "/Bakırköy3.png"];
+  const projectImages = ["/Bomonti1.png","/Bomonti2.png","/Bomonti3.png","/Bomonti4.png","/Bomonti5.png","/Bomonti6.png","/Bomonti7.png","/Bomonti8.png","/Bomonti9.png",];
 
   const openLightbox = (index) => setLightboxIndex(index);
   const closeLightbox = () => setLightboxIndex(null);
@@ -40,7 +41,7 @@ const ProjectDetailsBakirköy = () => {
   return (
     <HelmetProvider>
       <Helmet>
-        <title>{t("project_bakirkoy.page_title")}</title>
+        <title>{t("project_sisli.page_title")}</title>
       </Helmet>
       <Header
         normalLogo={headerLogoNormal}
@@ -58,15 +59,15 @@ const ProjectDetailsBakirköy = () => {
         <div className="project-header">
           <h1>{projectInfo.name}</h1>
           <p>
-            <strong>{t("project_bakirkoy.location_label")}:</strong>{" "}
+            <strong>{t("project_sisli.location_label")}:</strong>{" "}
             {projectInfo.location}
           </p>
           <p>
-            <strong>{t("project_bakirkoy.delivery_label")}:</strong>{" "}
+            <strong>{t("project_sisli.delivery_label")}:</strong>{" "}
             {projectInfo.deliveryDate}
           </p>
           <p>
-            <strong>{t("project_bakirkoy.area_label")}:</strong>{" "}
+            <strong>{t("project_sisli.area_label")}:</strong>{" "}
             {projectInfo.area}
           </p>
           {projectInfo.description.map((line, index) => (
@@ -107,4 +108,4 @@ const ProjectDetailsBakirköy = () => {
   );
 };
 
-export default ProjectDetailsBakirköy;
+export default ProjectDetailsSisli;

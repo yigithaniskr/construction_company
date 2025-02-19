@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next"; // Çeviri desteği eklendi
 import "./ProjectDetailsNewProject.css";
-import headerLogoNormal from "/last_logo.png";
-import logo from "/last_logo.png";
+import headerLogoNormal from "/blue-logo.png";
+import logo from "/blue-logo.png";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Header from "../../Layout/Header/Header";
 import FooterMain from "../../Layout/Footer/FooterMain";
