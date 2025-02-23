@@ -32,6 +32,34 @@ const Index1Main = () => {
       buttonText: t("homepage.slider.contact.buttonText"),
       buttonLink: "whatsapp",
       image: "/iletişim.png",
+    },  
+    {
+      id: 4,
+      title: t("homepage.slider.sapanca.title"),
+      buttonText: t("homepage.slider.sapanca.buttonText"),
+      buttonLink: "/proje-detaylari-sapanca",
+      image: "/Sapanca5.png",
+    },
+    {
+      id: 5,
+      title: t("homepage.slider.bakirköy.title"),
+      buttonText: t("homepage.slider.bakirköy.buttonText"),
+      buttonLink: "/proje-detaylari-bakırköy",
+      image: "/Bakırköy1.png",
+    },
+    {
+      id: 6,
+      title: t("homepage.slider.çeliktepe.title"),
+      buttonText: t("homepage.slider.çeliktepe.buttonText"),
+      buttonLink: "/proje-detaylari-çeliktepe",
+      image: "/Çeliktepe8.png",
+    },
+    {
+      id: 7,
+      title: t("homepage.slider.kağıthane.title"),
+      buttonText: t("homepage.slider.kağıthane.buttonText"),
+      buttonLink: "/proje-detaylari-kağıthane",
+      image: "/Kağıthane4.png",
     },
   ];
 
@@ -130,6 +158,10 @@ const Index1Main = () => {
           {t("homepage.cta.buttonText")}
         </a>
       </div>
+
+     
+
+
     </div>
   );
 };

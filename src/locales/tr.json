@@ -186,7 +186,25 @@
         "title": "İletişim",
         "description": "Hayallerinizi birlikte inşa edelim.",
         "buttonText": "Bize Ulaşın"
+      },
+      "sapanca": {
+        "title": "Sapanca İnşaat Projesi",
+        "buttonText": "Proje Detayları"
+      },
+      "bakirköy": {
+        "title": "Bakirköy İnşaat Projesi",
+        "buttonText": "Proje Detayları"
+      },
+      "çeliktepe": {
+        "title": "Çeliktepe İnşaat Projesi",
+        "buttonText": "Proje Detayları"
       }
+      ,
+      "kağıthane": {
+        "title": "Kağıthane İnşaat Projesi",
+        "buttonText": "Proje Detayları"
+      }
+      
     },
     "about": {
       "title": "Hakkımızda",
