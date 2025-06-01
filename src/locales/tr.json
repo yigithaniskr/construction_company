@@ -2,10 +2,11 @@
     "footer": {
       "company_description": "İpekçi İnşaat, müşteri memnuniyetini ön planda tutarak kat karşılığı inşaat, anahtar teslim projeler, dekorasyon ve tadilat hizmetleri sunmaktadır. Emlak danışmanlığı ve kaliteli çözümleriyle sektörde fark yaratıyoruz.",
       "contact_info": "İLETİŞİM BİLGİLERİ",
-      "address": "Kağıthane / İstanbul",
+      "address": "Peker İş Merkezi Telsizler mah. Talatpaşa cad. Dış Kapı No: 130 İç Kapı No: 409 Kat 4 Gültepe Kağıthane/İstanbul",
       "phone": "(+90) 532 558 96 58",
       "email": "info@ipekciinsaat.com",
       "services": "HİZMETLERİMİZ",
+      "direction_to":"Yol Tarifi İçin Tıklayınız",
       "service_list": {
         "construction": "Kat Karşılığı İnşaat Taahhüt",
         "turnkey": "Anahtar Teslimi İnşaat",
@@ -242,6 +243,9 @@
     "area": "1500 m²",
     "area_label": "Metrekare",
     "description": "8 adet 2+1 ve 2 adet 3+1 dubleks daireden oluşmaktadır."
+  },
+  "office_addres": {
+    "title": "Ofis Adresimiz"
   }
 }
   

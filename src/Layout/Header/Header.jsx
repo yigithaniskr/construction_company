@@ -205,14 +205,7 @@ const Header = ({
                 </ul>
                 <div className="canvas-contact">
                     <div className="address-area">
-                        <div className="address-list">
-                            <div className="info-icon">
-                                <i className="fi fi-rr-map-marker-home"></i>
-                            </div>
-                            <div className="info-content">
-                                <em className="title">{t("menu.kgthn")}</em>
-                            </div>
-                        </div>
+                        
                         <div className="address-list">
                             <div className="info-icon">
                                 <i className="fi fi-rr-envelope-plus"></i>

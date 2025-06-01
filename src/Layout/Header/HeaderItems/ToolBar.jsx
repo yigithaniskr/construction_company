@@ -37,12 +37,7 @@ const ToolBar = ({ topBarModifyClass, phnNumber, mail, address, textOnly, phnNum
                                             <Link to="tel:(+90) 532 558 96 58">(+90) 532 558 96 58</Link>
                                         </li>
                                     )}
-                                    {address && (
-                                        <li>
-                                            <i className="ri-map-pin-line"></i>
-                                            {t('menu.kgthn')}
-                                        </li>
-                                    )}
+                                   
                                 </ul>
                             </div>
                         </div>

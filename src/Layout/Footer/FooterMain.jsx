@@ -15,9 +15,30 @@ const Footer = ({ logo, footerStyle }) => {
                 {`
                 @media (max-width: 768px) {
                     .footer-logo img {
-                        width: 150px !important; /* Mobil için logo genişliğini küçült */
-                        height: auto !important; /* Yükseklik otomatik ayarlanır */
+                        width: 150px !important;
+                        height: auto !important;
                     }
+                }
+                .site-map li {
+                    color: #fff;
+                    margin-bottom: 8px;
+                    transition: color 0.3s ease;
+                    cursor: pointer;
+                }
+                .site-map li:hover {
+                    color: #ccc;
+                }
+                .site-map li a {
+                    color: inherit;
+                    text-decoration: none;
+                }
+                .desc a {
+                    color: #fff;
+                    text-decoration: none;
+                    transition: color 0.3s ease;
+                }
+                .desc a:hover {
+                    color: #00f; /* Telefon numarası gibi mavi yapar */
                 }
                 `}
             </style>
@@ -48,7 +69,15 @@ const Footer = ({ logo, footerStyle }) => {
                             <ul className="address-widget">
                                 <li>
                                     <i className="fi fi-rr-marker"></i>
-                                    <div className="desc">{t('footer.address')}</div>
+                                    <div className="desc">
+                                        <a 
+                                            href="https://www.google.com/maps/dir/?api=1&destination=Peker+İş+Merkezi+Kağıthane+İstanbul" 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                        >
+                                            {t('footer.address')}
+                                        </a>
+                                    </div>
                                 </li>
                                 <li>
                                     <i className="fi fi-rr-phone-call"></i>
@@ -63,6 +92,33 @@ const Footer = ({ logo, footerStyle }) => {
                                     </div>
                                 </li>
                             </ul>
+                            {/* Google Maps iFrame */}
+                            <div className="mt-3">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.5561521271748!2d28.99848033304203!3d41.07869367298131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7a57d5d14b5%3A0xc9a9cd77f0a01ba!2zUGVrZXIgxLDFnyBNZXJrZXpp!5e0!3m2!1str!2str!4v1748781035339!5m2!1str!2str"
+                                    width="100%"
+                                    height="200"
+                                    frameBorder="0"
+                                    style={{ border: 0 }}
+                                    allowFullScreen=""
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                    title="Ofis Konumu"
+                                ></iframe>
+                                <div className="mt-2">
+                                    <ul className="site-map">
+                                        <li onClick={handleLinkClick}>
+                                            <a 
+                                                href="https://www.google.com/maps/dir/?api=1&destination=Peker+İş+Merkezi+Kağıthane+İstanbul" 
+                                                target="_blank" 
+                                                rel="noopener noreferrer"
+                                            >
+                                                {t('footer.direction_to')}
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                         <div className="col-lg-3 md-mb-10">
                             <h3 className="footer-title">{t('footer.services')}</h3>

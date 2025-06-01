@@ -2,10 +2,11 @@
   "footer": {
     "company_description": "Ipekci Construction prioritizes customer satisfaction by offering land-for-construction contracts, turnkey projects, decoration, and renovation services. We stand out in the industry with real estate consultancy and quality solutions.",
     "contact_info": "CONTACT INFORMATION",
-    "address": "Kagithane / Istanbul",
+    "address": "Peker Business Center Telsizler neighborhood. Talatpasa street. Outer Door No: 130 Inner Door No: 409 Floor 4 Gultepe Kagithane/Istanbul",
     "phone": "(+90) 532 558 96 58",
     "email": "info@ipekciinsaat.com",
     "services": "OUR SERVICES",
+    "direction_to":"Click for Directions",
     "service_list": {
       "construction": "Land-for-Construction Contracts",
       "turnkey": "Turnkey Construction",
@@ -226,6 +227,9 @@
     "area": "1500 m²",
     "area_label": "Square Meters",
     "description": "Consists of 8 units of 2+1 apartments and 2 units of 3+1 duplex apartments."
-}
+},
+  "office_addres": {
+    "title": "Our Office Address"
+  }
 
 }
