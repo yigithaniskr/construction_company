@@ -1,16 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import "./Index1Main.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle, faHandshake, faLightbulb } from "@fortawesome/free-solid-svg-icons";
+import { listProjects } from "../../../../firebase/projects";
 
 const Index1Main = () => {
-  const { t } = useTranslation(); // i18n Çeviri Kullanımı
+  const { t } = useTranslation();
+  const [projects, setProjects] = useState([]);
 
-  const slides = [
+  useEffect(() => {
+    listProjects().then(setProjects).catch(() => setProjects([]));
+  }, []);
+
+  const introSlides = [
     {
-      id: 1,
+      id: "intro-services",
       title: t("homepage.slider.services.title"),
       description: t("homepage.slider.services.description"),
       buttonText: t("homepage.slider.services.buttonText"),
@@ -18,7 +24,7 @@ const Index1Main = () => {
       image: "/hizmet-slider.png",
     },
     {
-      id: 2,
+      id: "intro-projects",
       title: t("homepage.slider.projects.title"),
       description: t("homepage.slider.projects.description"),
       buttonText: t("homepage.slider.projects.buttonText"),
@@ -26,46 +32,37 @@ const Index1Main = () => {
       image: "/Çeliktepe5.png",
     },
     {
-      id: 3,
+      id: "intro-contact",
       title: t("homepage.slider.contact.title"),
       description: t("homepage.slider.contact.description"),
       buttonText: t("homepage.slider.contact.buttonText"),
       buttonLink: "whatsapp",
       image: "/iletişim.png",
-    },  
-    {
-      id: 4,
-      title: t("homepage.slider.sapanca.title"),
-      buttonText: t("homepage.slider.sapanca.buttonText"),
-      buttonLink: "/proje-detaylari-sapanca",
-      image: "/Sapanca5.png",
-    },
-    {
-      id: 5,
-      title: t("homepage.slider.bakirköy.title"),
-      buttonText: t("homepage.slider.bakirköy.buttonText"),
-      buttonLink: "/proje-detaylari-bakırköy",
-      image: "/Bakırköy1.png",
-    },
-    {
-      id: 6,
-      title: t("homepage.slider.çeliktepe.title"),
-      buttonText: t("homepage.slider.çeliktepe.buttonText"),
-      buttonLink: "/proje-detaylari-çeliktepe",
-      image: "/Çeliktepe8.png",
-    },
-    {
-      id: 7,
-      title: t("homepage.slider.kağıthane.title"),
-      buttonText: t("homepage.slider.kağıthane.buttonText"),
-      buttonLink: "/proje-detaylari-kağıthane",
-      image: "/Kağıthane4.png",
     },
   ];
+
+  const projectSlides = useMemo(() => (
+    projects
+      .filter((p) => p.coverPhotoUrl && p.showOnHomepage !== false)
+      .map((p) => ({
+        id: `project-${p.id}`,
+        title: p.projectTitle,
+        buttonText: t("projects.view_all_photos"),
+        buttonLink: `/proje/${p.slug || p.id}`,
+        image: p.coverPhotoUrl,
+      }))
+  ), [projects, t]);
+
+  const slides = useMemo(() => [...introSlides, ...projectSlides], [introSlides, projectSlides]);
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {
+    if (currentSlide >= slides.length) setCurrentSlide(0);
+  }, [slides.length, currentSlide]);
+
+  useEffect(() => {
+    if (slides.length === 0) return;
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
     }, 5000);

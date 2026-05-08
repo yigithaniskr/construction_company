@@ -40,6 +40,32 @@ const Footer = ({ logo, footerStyle }) => {
                 .desc a:hover {
                     color: #00f; /* Telefon numarası gibi mavi yapar */
                 }
+                .footer-bottom {
+                    border-top: 1px solid rgba(255,255,255,0.12);
+                    margin-top: 30px;
+                    padding: 22px 0;
+                }
+                .footer-bottom .footer-bottom-row {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    gap: 12px;
+                    color: #cfcfcf;
+                    font-size: 14px;
+                }
+                .footer-bottom a {
+                    color: #cfcfcf;
+                    text-decoration: none;
+                    transition: color 0.25s ease;
+                }
+                .footer-bottom a:hover { color: #4d9aff; }
+                @media (max-width: 600px) {
+                    .footer-bottom .footer-bottom-row {
+                        justify-content: center;
+                        text-align: center;
+                    }
+                }
                 `}
             </style>
             <div className="footer-top">
@@ -134,6 +160,17 @@ const Footer = ({ logo, footerStyle }) => {
                             <ul className="site-map">
                                 <li onClick={handleLinkClick}><Link to="/projeler">{t('footer.projects_link')}</Link></li>
                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="footer-bottom">
+                <div className="container">
+                    <div className="footer-bottom-row">
+                        <div>© {new Date().getFullYear()} İpekçi İnşaat. Tüm hakları saklıdır.</div>
+                        <div style={{ display: 'flex', gap: 22, flexWrap: 'wrap', justifyContent: 'center' }}>
+                            <Link to="/gizlilik-politikasi-kvkk" onClick={handleLinkClick}>Gizlilik Politikası & KVKK</Link>
+                            <Link to="/yonetim-paneli" onClick={handleLinkClick}>Yönetim Paneli</Link>
                         </div>
                     </div>
                 </div>

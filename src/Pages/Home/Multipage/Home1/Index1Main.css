@@ -70,28 +70,39 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.7);
-    border: none;
+    width: 52px;
+    height: 52px;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1.5px solid rgba(255, 255, 255, 0.4);
     color: #fff;
-    font-size: 24px;
-    padding: 10px 15px;
+    font-size: 26px;
+    line-height: 1;
     cursor: pointer;
     border-radius: 50%;
     z-index: 10;
-    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.25s ease, transform 0.2s ease, border-color 0.25s ease;
 }
 
-.prev-button {
-    left: 20px;
-}
-
-.next-button {
-    right: 20px;
-}
+.prev-button { left: 24px; }
+.next-button { right: 24px; }
 
 .prev-button:hover,
 .next-button:hover {
-    background-color: rgba(0, 0, 0, 1);
+    background: rgba(255, 255, 255, 0.32);
+    border-color: rgba(255, 255, 255, 0.7);
+    transform: translateY(-50%) scale(1.08);
+}
+
+@media (max-width: 600px) {
+    .prev-button, .next-button { width: 42px; height: 42px; font-size: 22px; }
+    .prev-button { left: 12px; }
+    .next-button { right: 12px; }
 }
 
 /* Teklif Al Bölümü */

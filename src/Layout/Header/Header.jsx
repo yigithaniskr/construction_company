@@ -73,20 +73,20 @@ const Header = ({
                 <div className={`menu-area menu-sticky ${isSticky ? 'sticky' : ''}`}>
                     <div className={`container${containerFluid || ''} ${boxLayout || ''}`}>
                         <div className="row-table">
-                        <div className="col-cell header-logo" style={{ overflow: 'hidden', display: 'flex', alignItems: 'center' }}>
+                        <div className="col-cell header-logo" style={{ display: 'flex', alignItems: 'center' }}>
     <div className="logo-area">
         <Link to="*">
-            <img 
-                className="normal-logo" 
-                style={{ width: '300px', maxHeight: '120px', height: 'auto', display: isSticky ? 'none' : 'block', marginRight: '20px' }}  
-                src={normalLogo} 
-                alt="logo" 
+            <img
+                className="normal-logo"
+                style={{ height: '58px', width: 'auto', maxHeight: 'none', maxWidth: 'none', display: isSticky ? 'none' : 'block', marginRight: '20px', marginTop: '-12px' }}
+                src={normalLogo}
+                alt="logo"
             />
-            <img 
-                className="sticky-logo" 
-                style={{ width: '280px', maxHeight: '120px', height: 'auto', display: isSticky ? 'block' : 'none', marginRight: '20px' }}  
-                src={darkLogo} 
-                alt="logo" 
+            <img
+                className="sticky-logo"
+                style={{ height: '48px', width: 'auto', maxHeight: 'none', maxWidth: 'none', display: isSticky ? 'block' : 'none', marginRight: '20px', marginTop: '-9px' }}
+                src={darkLogo}
+                alt="logo"
             />
         </Link>
     </div>

@@ -4,6 +4,31 @@
     background-color: #f9f9f9;
 }
 
+.projects-page-header {
+    text-align: center;
+    padding: 50px 20px 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.projects-page-header h1 {
+    font-size: 36px;
+    color: #0f1e3c;
+    font-weight: 700;
+    margin: 0 0 12px;
+    letter-spacing: -0.5px;
+}
+.projects-page-header .subtitle {
+    font-size: 17px;
+    color: #5a6478;
+    line-height: 1.6;
+    margin: 0;
+}
+@media (max-width: 600px) {
+    .projects-page-header { padding: 30px 16px 20px; }
+    .projects-page-header h1 { font-size: 28px; }
+    .projects-page-header .subtitle { font-size: 15px; }
+}
+
 .section {
     margin-bottom: 40px;
     text-align: center; /* Başlıkları ortalar */
@@ -21,7 +46,7 @@
     grid-template-columns: repeat(3, 1fr); /* Maksimum 3 sütun */
     gap: 20px;
     justify-items: center; /* Kartları yatayda ortalar */
-    align-items: start;
+    align-items: stretch;
 }
 
 .project-card {
@@ -36,6 +61,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
 }
 
 .project-card:hover {
@@ -56,6 +82,12 @@
     margin-bottom: 10px;
     font-weight: bold;
     text-align: center; /* Başlıkları ortalar */
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-word;
+    width: 100%;
 }
 
 .project-location {
@@ -63,6 +95,12 @@
     color: #555;
     margin-bottom: 20px;
     text-align: center;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-word;
+    width: 100%;
 }
 
 .view-details-button {
@@ -75,6 +113,7 @@
     transition: background-color 0.3s ease;
     font-size: 14px;
     font-weight: bold;
+    margin-top: auto;
 }
 
 .view-details-button:hover {
