@@ -23,13 +23,12 @@
     /* Force the hamburger to be visible on mobile, overriding any inherited rule */
     .full-width-header .rs-header .expand-btn-inner ul .humburger {
         display: block !important;
-        margin-right: 15px;
+        margin-right: 40px;
     }
     .full-width-header .rs-header .expand-btn-inner ul .humburger .nav-expander {
         display: inline-block;
-        padding: 6px 10px;
-        background: rgba(0, 86, 179, 0.08);
-        border-radius: 6px;
+        padding: 0;
+        background: transparent;
     }
     .full-width-header .rs-header .expand-btn-inner ul .humburger .nav-expander .bar {
         padding: 0 !important;
@@ -50,11 +49,6 @@
         background: #0056b3 !important;
         border-radius: 50%;
         display: block;
-    }
-    /* Ensure the right column has breathing room from screen edge */
-    .full-width-header .rs-header .menu-area .container,
-    .full-width-header .rs-header .menu-area .container-fluid {
-        padding-right: 15px;
     }
 }
 @media (max-width: 575px) {
