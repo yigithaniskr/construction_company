@@ -1,24 +1,24 @@
-/* Responsive logo */
-.ipekci-logo {
-    height: 58px;
-    width: auto;
-    max-height: none;
-    max-width: none;
+/* Responsive logo — !important needed to beat index.css max-height rules */
+.full-width-header .rs-header .menu-area .logo-area img.ipekci-logo {
+    height: 58px !important;
+    width: auto !important;
+    max-height: none !important;
+    max-width: none !important;
     margin-right: 20px;
     margin-top: -12px;
 }
-.ipekci-logo--sticky {
-    height: 48px;
+.full-width-header .rs-header .menu-area .logo-area img.ipekci-logo--sticky {
+    height: 48px !important;
     margin-top: -9px;
 }
 @media (max-width: 991px) {
-    .ipekci-logo {
-        height: 50px;
+    .full-width-header .rs-header .menu-area .logo-area img.ipekci-logo {
+        height: 56px !important;
         margin-top: 0;
         margin-right: 10px;
     }
-    .ipekci-logo--sticky {
-        height: 44px;
+    .full-width-header .rs-header .menu-area .logo-area img.ipekci-logo--sticky {
+        height: 50px !important;
     }
     /* Force the hamburger to be visible on mobile, overriding any inherited rule */
     .full-width-header .rs-header .expand-btn-inner ul .humburger {
@@ -29,11 +29,11 @@
     }
 }
 @media (max-width: 575px) {
-    .ipekci-logo {
-        height: 44px;
+    .full-width-header .rs-header .menu-area .logo-area img.ipekci-logo {
+        height: 50px !important;
     }
-    .ipekci-logo--sticky {
-        height: 40px;
+    .full-width-header .rs-header .menu-area .logo-area img.ipekci-logo--sticky {
+        height: 46px !important;
     }
 }
 
