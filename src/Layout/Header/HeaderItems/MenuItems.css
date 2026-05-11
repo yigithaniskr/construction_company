@@ -1,3 +1,88 @@
+/* Responsive logo */
+.ipekci-logo {
+    height: 58px;
+    width: auto;
+    max-height: none;
+    max-width: none;
+    margin-right: 20px;
+    margin-top: -12px;
+}
+.ipekci-logo--sticky {
+    height: 48px;
+    margin-top: -9px;
+}
+@media (max-width: 991px) {
+    .ipekci-logo {
+        height: 50px;
+        margin-top: 0;
+        margin-right: 10px;
+    }
+    .ipekci-logo--sticky {
+        height: 44px;
+    }
+    /* Force the hamburger to be visible on mobile, overriding any inherited rule */
+    .full-width-header .rs-header .expand-btn-inner ul .humburger {
+        display: block !important;
+    }
+    .full-width-header .rs-header .expand-btn-inner ul .humburger .nav-expander .bar {
+        padding: 12px 8px;
+    }
+}
+@media (max-width: 575px) {
+    .ipekci-logo {
+        height: 44px;
+    }
+    .ipekci-logo--sticky {
+        height: 40px;
+    }
+}
+
+/* Mobile sliding menu items */
+.mobile-nav-menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.mobile-nav-menu-list > li {
+    list-style: none;
+    border-bottom: 1px solid #eee;
+}
+.mobile-nav-menu-list > li > a,
+.mobile-nav-menu-list > li > button {
+    display: block;
+    padding: 14px 4px;
+    color: #010d14;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    width: 100%;
+    transition: color 0.3s ease;
+}
+.mobile-nav-menu-list > li > a:hover,
+.mobile-nav-menu-list > li > button:hover,
+.mobile-nav-menu-list > li.current-menu-item > a {
+    color: #0056b3;
+}
+.mobile-nav-menu-list > li.language-selector-container {
+    border-bottom: none;
+    padding-top: 16px;
+}
+.mobile-nav-menu-list .language-selector .lang-button {
+    border: 2px solid transparent;
+    background: transparent;
+    padding: 4px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.mobile-nav-menu-list .language-selector .lang-button.active {
+    border-color: #0056b3;
+}
+.mobile-nav-menu-list .language-selector .lang-button img {
+    width: 28px;
+    height: 20px;
+    display: block;
+}
+
 /* src/components/MenuItems.css */
 .loading-spinner {
     position: fixed;

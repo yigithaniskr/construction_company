@@ -4,6 +4,7 @@ import MenuItems from './HeaderItems/MenuItems';
 import ToolBar from './HeaderItems/ToolBar';
 import MobileMenu from './HeaderItems/MobileMenu';
 import { useTranslation } from 'react-i18next';
+import './HeaderItems/MenuItems.css';
 
 const Header = ({ 
     normalLogo, darkLogo, topBarVisible, headerStyle, middleHeader, 
@@ -42,6 +43,11 @@ const Header = ({
         document.body.classList.toggle('nav-expanded', !navExpanded);
     };
 
+    const handleCloseMobileMenu = () => {
+        setNavExpanded(false);
+        document.body.classList.remove('nav-expanded');
+    };
+
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
         return () => {
@@ -77,14 +83,14 @@ const Header = ({
     <div className="logo-area">
         <Link to="*">
             <img
-                className="normal-logo"
-                style={{ height: '58px', width: 'auto', maxHeight: 'none', maxWidth: 'none', display: isSticky ? 'none' : 'block', marginRight: '20px', marginTop: '-12px' }}
+                className="normal-logo ipekci-logo"
+                style={{ display: isSticky ? 'none' : 'block' }}
                 src={normalLogo}
                 alt="logo"
             />
             <img
-                className="sticky-logo"
-                style={{ height: '48px', width: 'auto', maxHeight: 'none', maxWidth: 'none', display: isSticky ? 'block' : 'none', marginRight: '20px', marginTop: '-9px' }}
+                className="sticky-logo ipekci-logo ipekci-logo--sticky"
+                style={{ display: isSticky ? 'block' : 'none' }}
                 src={darkLogo}
                 alt="logo"
             />
@@ -180,16 +186,18 @@ const Header = ({
                 className={`right_menu_togle mobile-navbar-menu ${navExpanded ? 'open' : 'closed'}`}
                 id="mobile-navbar-menu"
                 style={{
-                    maxHeight: navExpanded ? '100vh' : '0',
                     overflowY: navExpanded ? 'auto' : 'hidden',
                     display: navExpanded ? 'block' : 'none',
                     position: 'fixed',
                     top: 0,
                     right: 0,
-                    width: '90%',
+                    width: '85%',
+                    maxWidth: '360px',
+                    height: '100vh',
                     backgroundColor: '#fff',
-                    zIndex: 1000,
-                    transition: 'max-height 0.3s ease-in-out, display 0s 0.3s', // Smooth transition
+                    zIndex: 9999,
+                    padding: '70px 30px 40px 30px',
+                    boxShadow: '-2px 0 10px rgba(0,0,0,0.15)',
                 }}
             >
                 <div className="close-btn">
@@ -200,8 +208,15 @@ const Header = ({
                         </div>
                     </Link>
                 </div>
-                <ul className="nav-menu">
-                    <MobileMenu isMobile={true} isOnePage={isOnePage} />
+                <ul
+                    className="nav-menu mobile-nav-menu-list"
+                    style={{
+                        listStyle: 'none',
+                        padding: 0,
+                        margin: 0,
+                    }}
+                >
+                    <MobileMenu handleCloseMobileMenu={handleCloseMobileMenu} />
                 </ul>
                 <div className="canvas-contact">
                     <div className="address-area">

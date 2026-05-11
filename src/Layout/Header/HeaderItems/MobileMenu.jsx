@@ -1,130 +1,90 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-const MenuItem = ({ isMobile, isOnePage, handleCloseMobileMenu }) => {
-    const { t, i18n } = useTranslation(); // i18n çeviri desteği
-    const [openSubmenu, setOpenSubmenu] = useState(null);
-    const [activeMenu, setActiveMenu] = useState('');
-    const [submenuClass, setSubmenuclass] = useState(false);
+const MobileMenu = ({ handleCloseMobileMenu }) => {
+    const { t, i18n } = useTranslation();
+    const location = useLocation();
 
-    const handleSubMenuOpen = (submenu) => {
-        if (activeMenu === submenu) {
-            setOpenSubmenu(null);
-            setActiveMenu('');
-            setSubmenuclass(false);
-        } else {
-            setOpenSubmenu(submenu);
-            setActiveMenu(submenu);
-            setSubmenuclass(!submenuClass);
+    const handleLinkClick = () => {
+        window.scrollTo(0, 0);
+        if (typeof handleCloseMobileMenu === 'function') {
+            handleCloseMobileMenu();
         }
     };
 
     const handleWhatsAppClick = () => {
-        window.open('https://wa.me/905325589658', '_blank'); // WhatsApp sohbetini yeni sekmede açar
-    };
-
-    const handleClick = (menu) => {
-        if (activeMenu === menu) {
-            setActiveMenu('');
-        } else {
-            setActiveMenu(menu);
+        window.open('https://wa.me/905325589658', '_blank');
+        if (typeof handleCloseMobileMenu === 'function') {
+            handleCloseMobileMenu();
         }
-        handleCloseMobileMenu();
     };
 
-    const isActive = (menuItem) => {
-        return activeMenu === menuItem ? 'active' : '';
-    };
-
-    // ✅ Dil değiştirme fonksiyonu (Sayfanın tekrar yüklenmesini önler)
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);
-        localStorage.setItem('selectedLanguage', lng); // ✅ Kullanıcının seçimini kaydet
+        localStorage.setItem('selectedLanguage', lng);
     };
+
+    const isCurrent = (path) => decodeURIComponent(location.pathname) === path;
 
     return (
         <>
-            {isOnePage ? (
-                <MenuItemsSingle />
-            ) : (
-                <div>
-                    <li className="has-sub hash-has-sub">
-                        <Link
-                            to="/index-01"
-                            onClick={() => handleClick('index-01')}
-                            className={`hash ${isActive('index-01')}`}
-                        >
-                            {t("menu.home")}
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            to="/hakkımızda"
-                            className={`hash ${isActive('about')}`}
-                            onClick={() => handleClick('about')}
-                        >
-                            {t("menu.about")}
-                        </Link>
-                    </li>
-                    <li className="has-sub hash-has-sub">
-                        <Link
-                            to="/projeler"
-                            onClick={() => handleClick('projeler')}
-                            className={`hash ${isActive('projeler')}`}
-                        >
-                            {t("menu.projects")}
-                        </Link>
-                    </li>
-                    <li className="current-menu-item has-sub hash-has-sub">
-                        <Link
-                            to="/hizmetlerimiz"
-                            onClick={() => handleClick('hizmetlerimiz')}
-                            className={`hash ${isActive('hizmetlerimiz')}`}
-                        >
-                            {t("menu.services")}
-                        </Link>
-                    </li>
-                    <li>
-                        <button
-                            className={`hash ${isActive('contact')}`}
-                            onClick={() => {
-                                handleWhatsAppClick();
-                                setActiveMenu('contact');
-                            }}
-                            style={{
-                                background: 'none',
-                                border: 'none',
-                                color: 'inherit',
-                                cursor: 'pointer',
-                                padding: 0,
-                            }}
-                        >
-                            {t("menu.contact")}
-                        </button>
-                    </li>
+            <li className={isCurrent('/') ? 'current-menu-item' : ''}>
+                <Link to="/" onClick={handleLinkClick}>
+                    {t('menu.home')}
+                </Link>
+            </li>
+            <li className={isCurrent('/hakkımızda') ? 'current-menu-item' : ''}>
+                <Link to="/hakkımızda" onClick={handleLinkClick}>
+                    {t('menu.about')}
+                </Link>
+            </li>
+            <li className={isCurrent('/projeler') ? 'current-menu-item' : ''}>
+                <Link to="/projeler" onClick={handleLinkClick}>
+                    {t('menu.projects')}
+                </Link>
+            </li>
+            <li className={isCurrent('/hizmetlerimiz') ? 'current-menu-item' : ''}>
+                <Link to="/hizmetlerimiz" onClick={handleLinkClick}>
+                    {t('menu.services')}
+                </Link>
+            </li>
+            <li>
+                <button
+                    type="button"
+                    onClick={handleWhatsAppClick}
+                    style={{
+                        background: 'none',
+                        border: 'none',
+                        color: 'inherit',
+                        cursor: 'pointer',
+                        padding: 0,
+                        font: 'inherit',
+                        textAlign: 'left',
+                    }}
+                >
+                    {t('menu.contact')}
+                </button>
+            </li>
 
-                    {/* ✅ Dil Değiştirme Butonları (Yan Yana Görünecek Şekilde) */}
-                    <div className="language-selector-container">
-                        <div className="language-selector">
-                            <button
-                                className={`lang-button ${i18n.language === 'tr' ? 'active' : ''}`}
-                                onClick={() => changeLanguage('tr')}
-                            >
-                                <img src="https://flagcdn.com/w40/tr.png" alt="Türk Bayrağı" />
-                            </button>
-                            <button
-                                className={`lang-button ${i18n.language === 'en' ? 'active' : ''}`}
-                                onClick={() => changeLanguage('en')}
-                            >
-                                <img src="https://flagcdn.com/w40/us.png" alt="Amerikan Bayrağı" />
-                            </button>
-                        </div>
-                    </div>
+            <li className="language-selector-container" style={{ marginTop: '20px' }}>
+                <div className="language-selector" style={{ display: 'flex', gap: '10px' }}>
+                    <button
+                        className={`lang-button ${i18n.language === 'tr' ? 'active' : ''}`}
+                        onClick={() => changeLanguage('tr')}
+                    >
+                        <img src="https://flagcdn.com/w40/tr.png" alt="Türk Bayrağı" />
+                    </button>
+                    <button
+                        className={`lang-button ${i18n.language === 'en' ? 'active' : ''}`}
+                        onClick={() => changeLanguage('en')}
+                    >
+                        <img src="https://flagcdn.com/w40/us.png" alt="Amerikan Bayrağı" />
+                    </button>
                 </div>
-            )}
+            </li>
         </>
     );
 };
 
-export default MenuItem;
+export default MobileMenu;
